@@ -3,6 +3,7 @@ import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
 import Image from 'next/image'
+import { createHash } from 'crypto'
 
 const NavBar = () => {
   const locale = useLocale()
@@ -33,7 +34,7 @@ const NavBar = () => {
   )
 }
 
-const Header = ({ navBarTitle, fullWidth, emailHash }) => {
+const Header = ({ navBarTitle, fullWidth }) => {
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(null)
   const sentinalRef = useRef([])
@@ -48,6 +49,12 @@ const Header = ({ navBarTitle, fullWidth, emailHash }) => {
       navRef.current?.classList.add('remove-sticky')
     }
   }
+  const emailHash = createHash('md5')
+    .update(BLOG.email)
+    .digest('hex')
+    .trim()
+    .toLowerCase()
+
   useEffect(() => {
     const obvserver = new window.IntersectionObserver(handler)
     obvserver.observe(sentinalRef.current)

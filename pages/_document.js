@@ -58,26 +58,26 @@ class MyDocument extends Document {
             <>
               <link
                 rel="preconnect"
-                href="https://fonts.gstatic.com"
+                href="https://gstatic.loli.net"
                 crossOrigin="anonymous"
               />
               <link
                 rel="preload"
                 as="style"
-                href={`https://fonts.googleapis.com/css2?family=Noto+${
+                href={`https://fonts.loli.net/css2?family=Noto+${
                   BLOG.font === 'serif' ? 'Serif' : 'Sans'
                 }+${CJK()}:wght@400;500;700&display=swap`}
               />
               <link
                 rel="stylesheet"
-                href={`https://fonts.googleapis.com/css2?family=Noto+${
+                href={`https://fonts.loli.net/css2?family=Noto+${
                   BLOG.font === 'serif' ? 'Serif' : 'Sans'
                 }+${CJK()}:wght@400;500;700&display=swap`}
               />
               <noscript>
                 <link
                   rel="stylesheet"
-                  href={`https://fonts.googleapis.com/css2?family=Noto+${
+                  href={`https://fonts.loli.net/css2?family=Noto+${
                     BLOG.font === 'serif' ? 'Serif' : 'Sans'
                   }+${CJK()}:wght@400;500;700&display=swap`}
                 />
