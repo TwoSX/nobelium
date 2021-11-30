@@ -7,7 +7,7 @@ const Utterances = ({ issueTerm, layout }) => {
         ? 'preferred-color-scheme'
         : BLOG.appearance === 'light'
           ? 'github-light'
-          : 'github-dark'
+          : 'photon-dark'
     const script = document.createElement('script')
     const anchor = document.getElementById('comments')
     script.setAttribute('src', 'https://utteranc.es/client.js')

@@ -43,6 +43,14 @@ svg + .notion-page-title-text {
   @apply text-gray-900;
 }
 
+.notion-code {
+  background: hsl(220, 13%, 18%);
+}
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string{
+  background: none;
+}
+
 pre[class*='language-'] {
   line-height: inherit;
 }

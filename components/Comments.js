@@ -2,7 +2,6 @@ import { fetchCusdisLang } from '@/lib/cusdisLang'
 import BLOG from '@/blog.config'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import 'gitalk/dist/gitalk.css'
 
 const GitalkComponent = dynamic(
   () => {
