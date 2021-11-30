@@ -22,7 +22,7 @@ const BLOG = {
     keywords: ['Blog', 'Development', 'Notion', 'Code'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
-  notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
+  notionPageId: '7010eb3c4c4b4c8ca703f131fc0903bb', // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
     provider: '', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
@@ -39,7 +39,7 @@ const BLOG = {
     // support provider: gitalk, utterances, cusdis
     provider: 'gitalk', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
-      repo: 'TwoSX/nobelium', // The repository of store comments
+      repo: 'nobelium', // The repository of store comments
       owner: 'TwoSX',
       admin: [],
       clientID: 'a0e8f4692acf1b5400dc',
