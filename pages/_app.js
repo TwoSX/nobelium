@@ -29,6 +29,7 @@ import 'prismjs/components/prism-json'
 import 'prismjs/components/prism-swift'
 import 'prismjs/components/prism-markdown'
 import 'prismjs/components/prism-sql'
+import 'prismjs/components/prism-yaml'
 
 const Ackee = dynamic(() => import('@/components/Ackee'), { ssr: false })
 const Gtag = dynamic(() => import('@/components/Gtag'), { ssr: false })

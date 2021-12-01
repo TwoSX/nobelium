@@ -86,3 +86,7 @@ pre[class*="language-"] {
 .notion-collection-row {
   @apply hidden;
 }
+
+.notion-hr {
+  border-top: 1px solid rgba(75, 85, 99, var(--tw-border-opacity));
+}
