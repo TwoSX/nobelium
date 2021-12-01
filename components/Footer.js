@@ -11,10 +11,11 @@ const Footer = ({ fullWidth }) => {
     >
       <hr className="border-gray-200 dark:border-gray-600" />
       <div className="my-4 text-sm leading-6">
-        <div className="flex align-baseline justify-end">
+        <div className="flex align-baseline justify-between">
           <p>
             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}
           </p>
+          <p>Powered by <a href="https://notion.so/">Notion</a> & <a href="https://github.com/craigary/nobelium">nobelium</a></p>
         </div>
       </div>
     </div>

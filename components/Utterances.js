@@ -7,7 +7,7 @@ const Utterances = ({ issueTerm, layout }) => {
         ? 'preferred-color-scheme'
         : BLOG.appearance === 'light'
           ? 'github-light'
-          : 'photon-dark'
+          : 'github-dark'
     const script = document.createElement('script')
     const anchor = document.getElementById('comments')
     script.setAttribute('src', 'https://utteranc.es/client.js')
@@ -27,7 +27,6 @@ const Utterances = ({ issueTerm, layout }) => {
         id="comments"
         className={layout && layout === 'fullWidth' ? '' : 'md:-ml-16'}
       >
-        <div className="utterances-frame"></div>
       </div>
     </>
   )
